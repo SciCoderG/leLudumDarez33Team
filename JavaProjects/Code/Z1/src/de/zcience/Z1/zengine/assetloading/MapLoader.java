@@ -1,4 +1,4 @@
-package de.zcience.Z1.zengine.util;
+package de.zcience.Z1.zengine.assetloading;
 
 import java.nio.file.AccessDeniedException;
 
@@ -15,6 +15,7 @@ import de.zcience.Z1.game.EntityCreator;
 import de.zcience.Z1.tiled.TiledMapRenderingSystem;
 import de.zcience.Z1.zengine.camera.CameraSystem;
 import de.zcience.Z1.zengine.physics.PhysicsSystem;
+import de.zcience.Z1.zengine.util.GameConstants;
 
 public class MapLoader {
 	private static boolean loaded = false;

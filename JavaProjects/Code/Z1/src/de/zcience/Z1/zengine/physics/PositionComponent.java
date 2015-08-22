@@ -11,7 +11,12 @@ import com.badlogic.gdx.utils.Pool.Poolable;
  */
 public class PositionComponent extends Component implements Poolable{
 
+	public enum FACING{
+		UP, RIGHT, DOWN, LEFT;
+	}
+	
     public float x, y;
+    public FACING direction;
     
     @Override
     public void reset() {

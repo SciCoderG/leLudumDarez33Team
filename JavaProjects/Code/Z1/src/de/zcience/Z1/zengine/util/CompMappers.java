@@ -12,6 +12,7 @@ import de.zcience.Z1.zengine.physics.MovementComponent;
 import de.zcience.Z1.zengine.physics.PhysicsBodyComponent;
 import de.zcience.Z1.zengine.physics.PhysicsModifierComponent;
 import de.zcience.Z1.zengine.physics.PositionComponent;
+import de.zcience.Z1.zengine.rendering.components.AnimationComponent;
 import de.zcience.Z1.zengine.rendering.components.BulletLightComponent;
 import de.zcience.Z1.zengine.rendering.components.LightComponent;
 import de.zcience.Z1.zengine.rendering.components.TextureComponent;
@@ -51,5 +52,6 @@ public class CompMappers {
 			.getFor(EnemyComponent.class);
 	public static final ComponentMapper<BulletLightComponent> bulletLight = ComponentMapper
 			.getFor(BulletLightComponent.class);
-
+	public static final ComponentMapper<AnimationComponent> animation = ComponentMapper
+			.getFor(AnimationComponent.class);
 }
