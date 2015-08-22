@@ -29,6 +29,11 @@ public class TextureRenderer extends IteratingSystem {
 	}
 
 	@Override
+	/**
+	 * TODO: Das ist hier vollkommener Schwachsinn. Irgendwie muss es möglich sein einfach alles in 
+	 * Kamera Koordinaten zu projizieren. Die Berechnungen werden dann von der GPU übernommen
+	 * --> SPEEEEEEEEEDBOOOOOOOOOOOST
+	 */
 	protected void processEntity(Entity entity, float deltaTime) {
 		TextureComponent texComp = CompMappers.texture.get(entity);
 

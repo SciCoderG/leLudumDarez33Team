@@ -17,6 +17,7 @@ import de.zcience.Z1.game.components.JumpComponent;
 import de.zcience.Z1.game.components.PlayerComponent;
 import de.zcience.Z1.game.components.ShootingComponent;
 import de.zcience.Z1.game.components.StartPointComponent;
+import de.zcience.Z1.zengine.assetloading.AssetLoader;
 import de.zcience.Z1.zengine.camera.CameraSystem;
 import de.zcience.Z1.zengine.input.InputComponent;
 import de.zcience.Z1.zengine.physics.MovementComponent;
@@ -29,7 +30,6 @@ import de.zcience.Z1.zengine.rendering.LightSystem;
 import de.zcience.Z1.zengine.rendering.components.BulletLightComponent;
 import de.zcience.Z1.zengine.rendering.components.LightComponent;
 import de.zcience.Z1.zengine.rendering.components.TextureComponent;
-import de.zcience.Z1.zengine.util.AssetLoader;
 import de.zcience.Z1.zengine.util.GameConstants;
 
 /**
