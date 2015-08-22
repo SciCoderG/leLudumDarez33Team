@@ -1,0 +1,18 @@
+1. Animationen
+2. Artwork
+	Grafik
+3. UI
+
+4. (Sound)
+	(Sound abspielen)
+5. Menüs
+
+6. Datengetriebener machen
+
+
+
+
+------------------------
+
+Game Design
+	Mechaniken 
