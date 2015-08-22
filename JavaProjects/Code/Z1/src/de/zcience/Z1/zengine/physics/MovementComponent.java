@@ -5,7 +5,8 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Pool.Poolable;
 
 /**
- * Add this to anything that should moves
+ * Add this to anything that should move
+ * 
  * @author David
  *
  */

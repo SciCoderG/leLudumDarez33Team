@@ -12,7 +12,7 @@ public class MovementSystem extends IteratingSystem {
 
 
 	public MovementSystem(int priority) {
-		super(Family.all(MovementComponent.class , PhysicsBodyComponent.class)
+		super(Family.all(MovementComponent.class , PhysicsBodyComponent.class, PositionComponent.class)
 				.get(), priority);
 	}
 
@@ -20,6 +20,7 @@ public class MovementSystem extends IteratingSystem {
 	protected void processEntity(Entity entity, float deltaTime) {
 		MovementComponent movement = CompMappers.movement.get(entity);
 		PhysicsBodyComponent physicsBody = CompMappers.physicsBody.get(entity);
+		PositionComponent posComp = CompMappers.position.get(entity);
 		InputComponent input = CompMappers.input.get(entity);		
 		/*
 		 * Controlling movement horizontally
@@ -29,6 +30,11 @@ public class MovementSystem extends IteratingSystem {
 			// multiplicated by the scalar of the movement speed
 			movement.velocity.set(input.x * movement.speed,
 					input.y * movement.speed);
+		}
+		if(movement.velocity.x < 0){
+			posComp.direction = PositionComponent.FACING.LEFT;
+		} else if(movement.velocity.x > 0){
+			posComp.direction = PositionComponent.FACING.RIGHT;
 		}
 		physicsBody.getBody().setLinearVelocity(movement.velocity);
 	}

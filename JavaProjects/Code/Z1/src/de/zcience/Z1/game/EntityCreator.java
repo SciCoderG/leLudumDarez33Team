@@ -7,6 +7,8 @@ import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.PooledEngine;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.Animation.PlayMode;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
@@ -27,6 +29,7 @@ import de.zcience.Z1.zengine.physics.PositionComponent;
 import de.zcience.Z1.zengine.physics.util.PhysicsBodyDef;
 import de.zcience.Z1.zengine.physics.util.PhysicsFixtureDef;
 import de.zcience.Z1.zengine.rendering.LightSystem;
+import de.zcience.Z1.zengine.rendering.components.AnimationComponent;
 import de.zcience.Z1.zengine.rendering.components.BulletLightComponent;
 import de.zcience.Z1.zengine.rendering.components.LightComponent;
 import de.zcience.Z1.zengine.rendering.components.TextureComponent;
@@ -85,19 +88,27 @@ public class EntityCreator {
 		Entity entity = engine.createEntity();
 
 		/* TextureComponent */
-		TextureComponent textureComponent = engine
-				.createComponent(TextureComponent.class);
+//		TextureComponent textureComponent = engine
+//				.createComponent(TextureComponent.class);
+//
+//		textureComponent.texture = new TextureRegion(AssetLoader.getAssetManager().get("images/Amor2.png", Texture.class));
+//		textureComponent.width = textureComponent.texture.getRegionWidth();
+//		textureComponent.height = textureComponent.texture.getRegionHeight();
+//		entity.add(textureComponent);
 
-		textureComponent.texture = new TextureRegion(AssetLoader.getAssetManager().get("images/Amor2.png", Texture.class));
-		textureComponent.width = textureComponent.texture.getRegionWidth();
-		textureComponent.height = textureComponent.texture.getRegionHeight();
-		entity.add(textureComponent);
-
+		AnimationComponent animComponent = engine.createComponent(AnimationComponent.class);
+		animComponent.animation = AssetLoader.getAssetManager().get("images/sprite-animation1.png", Animation.class);
+		animComponent.animation.setPlayMode(PlayMode.LOOP);
+		animComponent.animation.setFrameDuration(0.5f);
+		animComponent.width = animComponent.animation.getKeyFrame(0.0f).getRegionWidth();
+		animComponent.height = animComponent.animation.getKeyFrame(0.0f).getRegionHeight();
+		entity.add(animComponent);
+		
 		/*
 		 * PhysicsBody
 		 */
-		float width = textureComponent.width;
-		float height = textureComponent.height;
+		float width = animComponent.width;
+		float height = animComponent.height;
 		PhysicsBodyComponent physicsBody = engine
 				.createComponent(PhysicsBodyComponent.class);
 		PhysicsBodyDef bodyDef = new PhysicsBodyDef(BodyType.DynamicBody,

@@ -110,8 +110,8 @@ public class AnimationLoader extends AsynchronousAssetLoader<Animation, Animatio
 
 	static public class AnimationParameter extends AssetLoaderParameters<Animation> {
 
-		public float frameDuration;
-		public int frame_cols, frame_rows;
+		public float frameDuration = 0.5f;
+		public int frame_cols = 2, frame_rows = 2;
 		/**
 		 * the format of the final Texture. Uses the source images format if
 		 * null
