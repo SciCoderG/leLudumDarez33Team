@@ -40,8 +40,8 @@ public class CameraSystem extends EntitySystem implements EntityListener {
 		camera = new OrthographicCamera();
 		resizeCameraViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
-		setSpringConst(5f);
-		setMass(1.0f);
+		setSpringConst(20f);
+		setMass(2.0f);
 		setCameraSmoothness(0.5f, 2.0f);
 	}
 

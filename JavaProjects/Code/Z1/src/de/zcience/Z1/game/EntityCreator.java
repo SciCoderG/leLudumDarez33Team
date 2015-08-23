@@ -112,8 +112,7 @@ public class EntityCreator {
 		PhysicsBodyComponent physicsBody = engine
 				.createComponent(PhysicsBodyComponent.class);
 		PhysicsBodyDef bodyDef = new PhysicsBodyDef(BodyType.DynamicBody,
-				physicsSystem).fixedRotation(true).position(x, y)
-				.gravityScale(10.0f);
+				physicsSystem).fixedRotation(true).position(x, y);
 
 		physicsBody.init(bodyDef, physicsSystem, entity);
 
@@ -174,7 +173,7 @@ public class EntityCreator {
 
 		// JumpComponent
 		JumpComponent jumpComp = engine.createComponent(JumpComponent.class);
-		jumpComp.jumpForce.set(0.0f, 800.0f);
+		jumpComp.jumpForce.set(0.0f, 250.0f);
 		entity.add(jumpComp);
 
 		// LightComponent
