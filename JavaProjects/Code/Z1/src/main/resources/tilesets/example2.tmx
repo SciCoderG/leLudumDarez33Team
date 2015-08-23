@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="80" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="someTilesInRed" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="80" tilewidth="32" tileheight="32" nextobjectid="60">
+ <tileset firstgid="1" name="someTilesInRed" tilewidth="32" tileheight="32" tilecount="72">
   <image source="someTilesInRed.png" width="384" height="192"/>
   <tile id="0">
    <properties>
@@ -8,6 +8,16 @@
    </properties>
   </tile>
   <tile id="1">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="3">
    <properties>
     <property name="Type" value="Floor"/>
    </properties>
@@ -32,6 +42,26 @@
     <property name="Type" value="Floor"/>
    </properties>
   </tile>
+  <tile id="14">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
   <tile id="24">
    <properties>
     <property name="Type" value="Floor"/>
@@ -42,12 +72,112 @@
     <property name="Type" value="Floor"/>
    </properties>
   </tile>
+  <tile id="26">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
   <tile id="36">
    <properties>
     <property name="Type" value="Floor"/>
    </properties>
   </tile>
   <tile id="37">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="Type" value="Floor"/>
+   </properties>
+  </tile>
+  <tile id="65">
    <properties>
     <property name="Type" value="Floor"/>
    </properties>
@@ -69,64 +199,64 @@
   </data>
  </layer>
  <objectgroup name="Collision">
-  <object name="Enemy" type="Enemy1" x="517" y="219"/>
-  <object name="Enemy" type="Enemy1" x="846" y="580"/>
-  <object name="Enemy" type="Enemy1" x="1262.67" y="565.333"/>
-  <object name="Enemy" type="Enemy1" x="1084" y="688" width="4"/>
-  <object name="Enemy" type="Enemy1" x="2353" y="201"/>
-  <object name="Enemy" type="Enemy1" x="2418" y="206"/>
-  <object name="Enemy" type="Enemy1" x="2480" y="206"/>
-  <object name="Enemy" type="Enemy1" x="2288" y="202"/>
-  <object name="Enemy" type="Enemy1" x="2322" y="203"/>
-  <object name="Enemy" type="Enemy1" x="2384" y="205"/>
-  <object name="Enemy" type="Enemy1" x="2449" y="207"/>
-  <object name="Enemy" type="Enemy1" x="2515" y="210"/>
-  <object name="Enemy" type="Enemy1" x="2320" y="508"/>
-  <object name="Enemy" type="Enemy1" x="1840" y="378"/>
-  <object name="Enemy" type="Enemy1" x="1704" y="662"/>
-  <object name="Enemy" type="Enemy1" x="240" y="816"/>
-  <object name="Enemy" type="Enemy1" x="342" y="1016"/>
-  <object name="Enemy" type="Enemy1" x="796" y="988"/>
-  <object name="Enemy" type="Enemy1" x="1148" y="896"/>
-  <object name="Enemy" type="Enemy1" x="1780" y="1228"/>
-  <object name="Enemy" type="Enemy1" x="844" y="1198"/>
-  <object name="Enemy" type="Enemy1" x="1284" y="1420"/>
-  <object name="Enemy" type="Enemy1" x="638" y="1650"/>
-  <object name="Enemy" type="Enemy1" x="366" y="1422"/>
-  <object name="Enemy" type="Enemy1" x="670" y="2038"/>
-  <object name="Enemy" type="Enemy1" x="946" y="1792"/>
-  <object name="Enemy" type="Enemy1" x="438" y="2296"/>
-  <object name="Enemy" type="Enemy1" x="948" y="2442"/>
-  <object name="Enemy" type="Enemy1" x="1006" y="2106"/>
-  <object name="Enemy" type="Enemy1" x="1360" y="2154"/>
-  <object name="Enemy" type="Enemy1" x="1436" y="1986"/>
-  <object name="Enemy" type="Enemy1" x="1686" y="2216"/>
-  <object name="Enemy" type="Enemy1" x="2114" y="2174"/>
-  <object name="Enemy" type="Enemy1" x="2244" y="2314"/>
-  <object name="Enemy" type="Enemy1" x="2438" y="2180"/>
-  <object name="Enemy" type="Enemy1" x="2312" y="1930"/>
-  <object name="Enemy" type="Enemy1" x="2244" y="1586"/>
-  <object name="Enemy" type="Enemy1" x="2418" y="1540"/>
-  <object name="Enemy" type="Enemy1" x="1798" y="1786"/>
-  <object name="Enemy" type="Enemy1" x="2220" y="1392"/>
-  <object name="Enemy" type="Enemy1" x="2222" y="1162"/>
-  <object name="Enemy" type="Enemy1" x="2250" y="934"/>
-  <object name="Enemy" type="Enemy1" x="2418" y="900"/>
-  <object name="Enemy" type="Enemy1" x="2416" y="1017"/>
-  <object name="Enemy" type="Enemy1" x="1486" y="108"/>
-  <object name="Enemy" type="Enemy1" x="1274" y="296"/>
-  <object name="Enemy" type="Enemy1" x="2448" y="506"/>
-  <object name="Enemy" type="Enemy1" x="658" y="74"/>
-  <object name="Enemy" type="Enemy1" x="204" y="2174"/>
-  <object name="Enemy" type="Enemy1" x="484" y="2456"/>
-  <object name="Enemy" type="Enemy1" x="204" y="2054"/>
-  <object name="Enemy" type="Enemy1" x="1696" y="2355"/>
-  <object name="Enemy" type="Enemy1" x="1266.67" y="389.333"/>
-  <object name="Enemy" type="Enemy1" x="1345.45" y="2445.45"/>
-  <object name="Enemy" type="Enemy1" x="1345.45" y="1706.06"/>
-  <object name="Enemy" type="Enemy1" x="475.758" y="1733.33"/>
-  <object name="Enemy" type="Enemy1" x="48.4848" y="1684.85"/>
-  <object name="Enemy" type="Enemy1" x="154.424" y="66.6061" width="18" height="15"/>
-  <object name="Start" type="Start" x="186.242" y="420.258" width="48" height="25"/>
+  <object id="1" name="Enemy" type="Enemy1" x="517" y="219"/>
+  <object id="2" name="Enemy" type="Enemy1" x="846" y="580"/>
+  <object id="3" name="Enemy" type="Enemy1" x="1262.67" y="565.333"/>
+  <object id="4" name="Enemy" type="Enemy1" x="1084" y="688" width="4"/>
+  <object id="5" name="Enemy" type="Enemy1" x="2353" y="201"/>
+  <object id="6" name="Enemy" type="Enemy1" x="2418" y="206"/>
+  <object id="7" name="Enemy" type="Enemy1" x="2480" y="206"/>
+  <object id="8" name="Enemy" type="Enemy1" x="2288" y="202"/>
+  <object id="9" name="Enemy" type="Enemy1" x="2322" y="203"/>
+  <object id="10" name="Enemy" type="Enemy1" x="2384" y="205"/>
+  <object id="11" name="Enemy" type="Enemy1" x="2449" y="207"/>
+  <object id="12" name="Enemy" type="Enemy1" x="2515" y="210"/>
+  <object id="13" name="Enemy" type="Enemy1" x="2320" y="508"/>
+  <object id="14" name="Enemy" type="Enemy1" x="1840" y="378"/>
+  <object id="15" name="Enemy" type="Enemy1" x="1704" y="662"/>
+  <object id="16" name="Enemy" type="Enemy1" x="240" y="816"/>
+  <object id="17" name="Enemy" type="Enemy1" x="342" y="1016"/>
+  <object id="18" name="Enemy" type="Enemy1" x="796" y="988"/>
+  <object id="19" name="Enemy" type="Enemy1" x="1148" y="896"/>
+  <object id="20" name="Enemy" type="Enemy1" x="1780" y="1228"/>
+  <object id="21" name="Enemy" type="Enemy1" x="844" y="1198"/>
+  <object id="22" name="Enemy" type="Enemy1" x="1284" y="1420"/>
+  <object id="23" name="Enemy" type="Enemy1" x="638" y="1650"/>
+  <object id="24" name="Enemy" type="Enemy1" x="366" y="1422"/>
+  <object id="25" name="Enemy" type="Enemy1" x="670" y="2038"/>
+  <object id="26" name="Enemy" type="Enemy1" x="946" y="1792"/>
+  <object id="27" name="Enemy" type="Enemy1" x="438" y="2296"/>
+  <object id="28" name="Enemy" type="Enemy1" x="948" y="2442"/>
+  <object id="29" name="Enemy" type="Enemy1" x="1006" y="2106"/>
+  <object id="30" name="Enemy" type="Enemy1" x="1360" y="2154"/>
+  <object id="31" name="Enemy" type="Enemy1" x="1436" y="1986"/>
+  <object id="32" name="Enemy" type="Enemy1" x="1686" y="2216"/>
+  <object id="33" name="Enemy" type="Enemy1" x="2114" y="2174"/>
+  <object id="34" name="Enemy" type="Enemy1" x="2244" y="2314"/>
+  <object id="35" name="Enemy" type="Enemy1" x="2438" y="2180"/>
+  <object id="36" name="Enemy" type="Enemy1" x="2312" y="1930"/>
+  <object id="37" name="Enemy" type="Enemy1" x="2244" y="1586"/>
+  <object id="38" name="Enemy" type="Enemy1" x="2418" y="1540"/>
+  <object id="39" name="Enemy" type="Enemy1" x="1798" y="1786"/>
+  <object id="40" name="Enemy" type="Enemy1" x="2220" y="1392"/>
+  <object id="41" name="Enemy" type="Enemy1" x="2222" y="1162"/>
+  <object id="42" name="Enemy" type="Enemy1" x="2250" y="934"/>
+  <object id="43" name="Enemy" type="Enemy1" x="2418" y="900"/>
+  <object id="44" name="Enemy" type="Enemy1" x="2416" y="1017"/>
+  <object id="45" name="Enemy" type="Enemy1" x="1486" y="108"/>
+  <object id="46" name="Enemy" type="Enemy1" x="1274" y="296"/>
+  <object id="47" name="Enemy" type="Enemy1" x="2448" y="506"/>
+  <object id="48" name="Enemy" type="Enemy1" x="658" y="74"/>
+  <object id="49" name="Enemy" type="Enemy1" x="204" y="2174"/>
+  <object id="50" name="Enemy" type="Enemy1" x="484" y="2456"/>
+  <object id="51" name="Enemy" type="Enemy1" x="204" y="2054"/>
+  <object id="52" name="Enemy" type="Enemy1" x="1696" y="2355"/>
+  <object id="53" name="Enemy" type="Enemy1" x="1266.67" y="389.333"/>
+  <object id="54" name="Enemy" type="Enemy1" x="1345.45" y="2445.45"/>
+  <object id="55" name="Enemy" type="Enemy1" x="1345.45" y="1706.06"/>
+  <object id="56" name="Enemy" type="Enemy1" x="475.758" y="1733.33"/>
+  <object id="57" name="Enemy" type="Enemy1" x="48.4848" y="1684.85"/>
+  <object id="58" name="Enemy" type="Enemy1" x="154.424" y="66.6061" width="18" height="15"/>
+  <object id="59" name="Start" type="Start" x="186.242" y="420.258" width="48" height="25"/>
  </objectgroup>
 </map>

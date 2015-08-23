@@ -1,6 +1,7 @@
 package de.zcience.Z1.game.components;
 
 import com.badlogic.ashley.core.Component;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Pool;
 
 /**
@@ -10,8 +11,7 @@ import com.badlogic.gdx.utils.Pool;
  */
 public class JumpComponent extends Component implements Pool.Poolable{
 
-	public float force = 0.0f;
-	public float forceDown = 0.0f;
+	public Vector2 jumpForce = new Vector2();
 	public boolean jump = false;
 	public int groundContacts = 0;
 	

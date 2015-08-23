@@ -173,7 +173,9 @@ public class EntityCreator {
 		entity.add(engine.createComponent(PlayerComponent.class));
 
 		// JumpComponent
-		entity.add(engine.createComponent(JumpComponent.class));
+		JumpComponent jumpComp = engine.createComponent(JumpComponent.class);
+		jumpComp.jumpForce.set(0.0f, 800.0f);
+		entity.add(jumpComp);
 
 		// LightComponent
 		LightComponent lightCompo = engine

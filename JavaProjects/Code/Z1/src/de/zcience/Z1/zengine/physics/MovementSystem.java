@@ -36,6 +36,6 @@ public class MovementSystem extends IteratingSystem {
 		} else if(movement.velocity.x > 0){
 			posComp.direction = PositionComponent.FACING.RIGHT;
 		}
-		physicsBody.getBody().setLinearVelocity(movement.velocity);
+		physicsBody.getBody().setLinearVelocity(movement.velocity.x, physicsBody.getBody().getLinearVelocity().y);
 	}
 }

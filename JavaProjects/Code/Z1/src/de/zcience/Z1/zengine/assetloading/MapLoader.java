@@ -61,7 +61,6 @@ public class MapLoader {
 				 for(MapObject mapObject: objectLayer.getObjects()){
 					String name = mapObject.getName();
 					float positionX, positionY;
-					
 					// this is just plain stupid!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 					try {
 						RectangleMapObject rectMapObject = (RectangleMapObject) mapObject;

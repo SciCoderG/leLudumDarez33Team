@@ -19,6 +19,7 @@ import de.zcience.Z1.zengine.assetloading.AnimationLoader.AnimationParameter;
 public class AssetLoader {
 
 	private static ZAssetManager assetManager= new ZAssetManager();
+	private static TmxMapLoader tmxMapLoader = new TmxMapLoader();
 	
 	private AssetLoader(){
 			
@@ -35,8 +36,8 @@ public class AssetLoader {
 	
 	public static void loadAll(){
 		/* Load TiledMap */
-		TiledMap map = new TmxMapLoader()
-				.load("tilesets/example2.tmx");
+		TiledMap map = tmxMapLoader
+				.load("tilesets/test1.tmx");
 		
 		/* Load our Textures!*/
 		assetManager.load("images/Amor2.png", Texture.class);
